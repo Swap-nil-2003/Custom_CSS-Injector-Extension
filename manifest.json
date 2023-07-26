@@ -1,0 +1,20 @@
+{
+    "name":"CSS Injector",
+    "description":"Inject custom JS and CSS into websites",
+    "version":"0.0.0.1",
+    "manifest_version":3,
+    "content_scripts":[
+        {
+            "matches": [
+                "https://*.youtube.com/*",
+                "https://*.google.com/*",
+                "https://*.microsoft.com/*",
+                "https://*.heritageit.edu/*"
+            ],
+            "js": [
+                "app.js"
+            ]
+        }
+    ]
+
+}
